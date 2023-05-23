@@ -1,0 +1,302 @@
+@charset "UTF-8";
+
+/* IMPORT FONTS */
+/* POPPINS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* RESET START */
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    /* font-family: 'Roboto', sans-serif; */
+    
+}
+
+/* PALETS OF COLOR TO PROJECT */
+
+:root {
+
+    /* bg-color */
+
+        --bg-color-body: #1d2631;
+
+    /* color-colors */
+
+        --color-text: #fff;
+        --color-main: #34e7f8;
+        --color-main: #34e7f8;
+
+    /* other colors */
+
+        --outher-color: #fcfcfc;
+
+    /* font - size */
+
+    --h1-font: 4rem;
+    --p-font: 1rem;
+
+}
+
+/* BODY */
+
+body {
+
+    background-color: var(--bg-color-body);
+    color: var(--color-text);
+
+}
+
+/* HEADER */
+
+header {
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 8%;
+
+} 
+
+header .logo {
+
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+header .logo i {
+
+    color: var(--color-main);
+    font-size: 32px;
+    margin-right: 5px;
+
+}
+
+header .navigation {
+
+    display: flex;
+
+}
+
+header .navigation li a {
+
+    color: var(--outher-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 0 40px;
+    transition: all .5s ease;
+    
+}
+
+header .navigation li a:hover {
+
+    color: var(--color-main);
+ 
+}
+
+
+header .header-icons {
+
+    display: flex;
+    align-items: center;
+
+}
+
+header .header-icons #menu {
+
+    font-size: 35px;
+    color: var(--color-text);
+    z-index: 10001;
+    cursor: pointer;
+
+}
+
+header .header-icons i {
+
+    margin-right: 25px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all .5s ease; 
+
+}
+
+header .header-icons i:hover {
+
+    transform: translateY(-5px);
+    color: var(--color-main);
+
+}
+
+/* SECTION HOME */
+
+.home {
+
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.home .home-img img {
+
+    max-width: 100%;
+    width: 28rem;
+    height: auto;
+    margin-left: 25%;
+
+}
+
+.home .home-text h1 {
+
+    font-size: var(--h1-font);
+    line-height: 1.2;
+    margin-bottom: 2px;
+    margin-top: 10px;
+
+}
+
+.home .home-text h5 {
+
+    color: #ffffff99;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 60px;
+
+}
+
+.home .home-text h3 {
+
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+
+}
+
+.home .btn {
+
+    display: inline-block;
+    padding: 15px 70px;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    border: 2px solid var(--color-text);
+    color: var(--color-text);
+    border-radius: 5px;
+    transition: all .55s ease;
+
+}
+
+.home .btn:hover {
+
+    background-color: var(--color-text);
+    border: 2px solid var(--color-text);
+    color: #000;
+
+}
+
+/* MAIN */
+
+.main {
+
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.main li img {
+
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+
+}
+
+.main .row {
+
+    background-color: var(--color-main);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    transition: all .55s ease;
+    display: inline-flex;
+    cursor: pointer;
+
+}
+
+.main .row:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.main .row2 {
+
+    background-color: #ff758d;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+    transition: all .55s ease;
+    cursor: pointer;
+
+}
+
+.main .row2:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.main .row3 {
+
+    background-color: #ffd06d;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    transition: all .55s ease;
+    cursor: pointer;
+
+}
+
+.main .row3:hover {
+
+    transform: translateY(-8px);
+
+}
